@@ -17,7 +17,7 @@ export class InfoUserComponent {
 
   }
   public getInfo(){
-    let message=`${this._age} ${this._hobby} ${this._pseudo}`;
+    let message=`J'ai ${this._age} ans, j'aime ${this._hobby} et je m'appelle ${this._pseudo}`;
     return message;
   }
 }
