@@ -1,0 +1,6 @@
+<h2>Event Binding</h2>
+<p>My random number : {{number}}</p>
+
+<button type="buttom" (click)="randomNumber()" [disabled]="isDisabled">Random</button>
+<button type="buttom" (click)="resetNumber()">Reset</button>
+<button type="buttom" (click)="toggleDisable()">{{isDisabled ? "Enable":"Disable"}}</button>
