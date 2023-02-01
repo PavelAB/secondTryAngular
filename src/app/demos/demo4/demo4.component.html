@@ -1,0 +1,14 @@
+<h3> Directives Styles/Class</h3>
+
+<h4>NgStyles</h4>
+<p [ngStyle]="currentStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vitae id vero nesciunt
+    accusantium ut tempora quos,
+    culpa eveniet saepe officiis dolor quod, velit aliquid, mollitia voluptates maiores cumque impedit.</p>
+<button (click)="toggleBold()">Bold</button>
+<button (click)="toggleItalic()">Italic</button>
+<button (click)="toggleBig()">Big</button>
+<h4>NgClass</h4>
+<p [ngClass]="{'my-class':isActive}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur voluptatum veritatis dicta atque numquam
+    accusantium inventore pariatur vel sed illum debitis hic dolor excepturi, necessitatibus, ad natus reiciendis et.
+</p>
+<button (click)="isActive= !isActive">ToggleClass</button>
