@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TimerComponent {
   sec:number = 0;
-  intervale:any;
+  intervale!: ReturnType<typeof setInterval>;
   isDisabled:boolean=true;
 
   addOne = () =>{
@@ -19,7 +19,7 @@ export class TimerComponent {
   }
   stopTimer(){
     clearInterval(this.intervale);
-    this.isDisabled;
+    this.isDisabled=true;
   }
   resetTimer(){
     this.sec=0;
