@@ -10,6 +10,11 @@ export class TimerComponent {
   intervale!: ReturnType<typeof setInterval>;
   isDisabled:boolean=true;
 
+  // start(){
+  //   this.intervale=setInterval(()=>{
+  //     this.sec+=1;
+  //   },1000);
+  // }
   addOne = () =>{
     this.sec+=1;
   }

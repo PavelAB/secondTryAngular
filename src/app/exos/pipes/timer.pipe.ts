@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TimerPipe implements PipeTransform {
 
-  transform(total: number, ...args: unknown[]): string {
+  transform(total: number): string {
     let s,m,h,d;
     let s1,m1,h1;
     s=total%60;
@@ -14,8 +14,8 @@ export class TimerPipe implements PipeTransform {
     m=m%60;
     d=~~(m/24);
     h=h%24;
-    if (s>=0 && s<10) s1=`0${s}`;
-    else s1=s;
+    if (s>=0 && s<10) s1=`0${s}`; //s<10
+     else s1=s;
     if (m>=0 && m<10) m1=`0${m}`;
     else m1=m;
     if (h>=0 && h<10) h1=`0${h}`;
