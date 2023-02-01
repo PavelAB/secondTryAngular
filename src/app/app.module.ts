@@ -10,6 +10,8 @@ import { Exo1Component } from './exos/exo1/exo1.component';
 import { Demo2Component } from './demos/demo2/demo2.component';
 import { Demo3Component } from './demos/demo3/demo3.component';
 import { ToTemperaturePipe } from './demos/pipes/to-temperature.pipe';
+import { TimerComponent } from './exos/exo2/timer/timer.component';
+import { TimerPipe } from './exos/pipes/timer.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ToTemperaturePipe } from './demos/pipes/to-temperature.pipe';
     Exo1Component,
     Demo2Component,
     Demo3Component,
-    ToTemperaturePipe
+    ToTemperaturePipe,
+    TimerComponent,
+    TimerPipe
   ],
   imports: [
     BrowserModule,

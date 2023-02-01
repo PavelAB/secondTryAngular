@@ -1,0 +1,5 @@
+<h2>Chrono</h2>
+<h2>{{sec|timer}}</h2>
+<button type="buttom" (click)="goTimer()">Start</button>
+<button type="buttom" (click)="stopTimer()"[disabled]="isDisabled">Stop</button>
+<button type="buttom" (click)="resetTimer()" [disabled]="sec===0? true:false">Reset</button>
