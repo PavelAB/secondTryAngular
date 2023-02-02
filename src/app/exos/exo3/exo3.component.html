@@ -1,0 +1,8 @@
+<h4>Spoiler Alert</h4>
+<button (click)="isOpen=!isOpen">{{isOpen ? "Spoil": "Cacher"}}</button>
+<p *ngIf="isOpen, else elseBlock">Rien à voir</p>
+<ng-template #elseBlock >
+    <p [ngClass]="{'my-class':!isOpen}">
+        Bambi est pas mort à la fin
+    </p>
+</ng-template>
