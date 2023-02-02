@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { Exo1Component } from './exo1/exo1.component';
+import { Exo3Component } from './exo3/exo3.component';
+import { Exo4Component } from './exo4/exo4.component';
+import { Exo5Component } from './exo5/exo5.component';
+import { TimerComponent } from './exo2/timer/timer.component';
+
+
+const routes: Routes = [
+{path: 'exo1',component: Exo1Component },
+{path: 'exo2',component: TimerComponent },
+{path: 'exo3',component: Exo3Component },
+{path: 'exo4',component: Exo4Component },
+{path: 'exo5',component: Exo5Component },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class ExosRoutingModule { }
