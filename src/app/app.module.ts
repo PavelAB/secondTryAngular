@@ -16,6 +16,7 @@ import { Demo4Component } from './demos/demo4/demo4.component';
 import { Demo5Component } from './demos/demo5/demo5.component';
 import { FormsModule } from '@angular/forms';
 import { Exo3Component } from './exos/exo3/exo3.component';
+import { Exo4Component } from './exos/exo4/exo4.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Exo3Component } from './exos/exo3/exo3.component';
     TimerPipe,
     Demo4Component,
     Demo5Component,
-    Exo3Component
+    Exo3Component,
+    Exo4Component
   ],
   imports: [
     BrowserModule,
