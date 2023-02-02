@@ -7,7 +7,18 @@ import { Link } from '../models/link';
   styleUrls: ['./exo5.component.scss']
 })
 export class Exo5Component {
-  tableLink:Link[]=[{name:"HTML",message:"Mettre en page des sites web",active:false},{name:"CSS",message:"Les rendre plus ou moins beaux",active:false},{name:"JavaScript",message:"Les rendre dynamiques",active:false},{name:"C#",message:"Un super langage orienté objet",active:false}];
+  tableLink:Link[]=[{name:"HTML",
+  message:"Mettre en page des sites web",
+  active:false},
+  {name:"CSS",
+  message:"Les rendre plus ou moins beaux",
+  active:false},
+  {name:"JavaScript",
+  message:"Les rendre dynamiques",
+  active:false},
+  {name:"C#",
+  message:"Un super langage orienté objet",
+  active:false}];
   isOpen:boolean=true;
 
   // addInTableLink(link:Link){
