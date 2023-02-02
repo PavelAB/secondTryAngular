@@ -1,0 +1,7 @@
+<h3>Mes cours preferes</h3>
+
+
+        <div id="test2" *ngFor="let i of tableLink" (click)="i.active===true? i.active=false :isActive(i)">
+            <div>{{i.name}}</div>
+            <div id="test" *ngIf = "i.active" >{{i.message}}</div>
+        </div>

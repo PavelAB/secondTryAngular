@@ -17,6 +17,7 @@ import { Demo5Component } from './demos/demo5/demo5.component';
 import { FormsModule } from '@angular/forms';
 import { Exo3Component } from './exos/exo3/exo3.component';
 import { Exo4Component } from './exos/exo4/exo4.component';
+import { Exo5Component } from './exos/exo5/exo5.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { Exo4Component } from './exos/exo4/exo4.component';
     Demo4Component,
     Demo5Component,
     Exo3Component,
-    Exo4Component
+    Exo4Component,
+    Exo5Component
   ],
   imports: [
     BrowserModule,
