@@ -9,6 +9,8 @@ import { Demo4Component } from './demo4/demo4.component';
 import { Demo5Component } from './demo5/demo5.component';
 import { ToTemperaturePipe } from './pipes/to-temperature.pipe';
 import { FormsModule } from '@angular/forms';
+import { Demo6Component } from './demo6/demo6.component';
+import { EnfantComponent } from './demo6/enfant/enfant.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     Demo3Component,
     Demo4Component,
     Demo5Component,
-    ToTemperaturePipe
+    ToTemperaturePipe,
+    Demo6Component,
+    EnfantComponent
   ],
   imports: [
     CommonModule,

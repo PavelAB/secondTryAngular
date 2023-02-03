@@ -14,6 +14,7 @@ export class NavBarComponent {
     {title:"Demo 3",url:"demo3"},
     {title:"Demo 4",url:"demo4"},
     {title:"Demo 5",url:"demo5"},
+    {title:"Demo 6",url:"demo6"}
   ]},
   {title:"Exos",children:[
     {title:"UserInfo/Input",url:"exo1"},
