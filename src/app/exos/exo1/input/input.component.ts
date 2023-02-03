@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -6,20 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
-  private _placeHolder:string;
-  private _type:string;
+  @Input() _placeHolder:string;
+  _type:string;
 
   constructor(){
     this._placeHolder="It's alive";
     this._type="Text";
   }
 
-  get placeHolder(){
-    return this._placeHolder;
-  } 
 
-  get type(){
-    return this._type;
-  }
 
 }

@@ -19,4 +19,7 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ExosRoutingModule { }
+export class ExosRoutingModule { 
+
+  
+}

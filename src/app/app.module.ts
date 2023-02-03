@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InputComponent } from './exos/exo1/input/input.component';
-import { InfoUserComponent } from './exos/exo1/info-user/info-user.component';
 import { DemosModule } from './demos/demos.module';
+import { ExosModule } from './exos/exos.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    InputComponent,
-    InfoUserComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DemosModule
+    DemosModule,
+    ExosModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
