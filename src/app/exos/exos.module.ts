@@ -10,6 +10,9 @@ import { Exo5Component } from './exo5/exo5.component';
 import { InfoUserComponent } from './exo1/info-user/info-user.component';
 import { InputComponent } from './exo1/input/input.component';
 import { SharedModule } from '../shared/shared.module';
+import { Exo6Component } from './exo6/exo6.component';
+import { LivreComponent } from './exo6/livre/livre.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,11 +22,14 @@ import { SharedModule } from '../shared/shared.module';
   Exo4Component,
   Exo5Component,
   InfoUserComponent,
-  InputComponent],
+  InputComponent,
+  Exo6Component,
+  LivreComponent],
   imports: [
     CommonModule,
     ExosRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class ExosModule {

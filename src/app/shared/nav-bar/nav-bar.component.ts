@@ -22,6 +22,8 @@ export class NavBarComponent {
     {title:"Spoil",url:"exo3"},
     {title:"Menu",url:"exo4"},
     {title:"Accordeon",url:"exo5"},
+    {title:"Input/Output",url:"exo6"}
+
   ]}
 ]
 

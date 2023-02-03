@@ -11,7 +11,7 @@ export class Demo6Component {
 
   prenomsEnfant:string[]=["Pierre","Paul","Jacques"];
 
-  // methodes qui sera envoaer a l'enfant pour mettre a jour les infos du parents
+  // methodes qui sera envoyer a l'enfant pour mettre a jour les infos du parents
   recevoirBonjour(event:string){
     this.messageDeFiston=event;
   }
