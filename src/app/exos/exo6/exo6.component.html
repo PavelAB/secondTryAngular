@@ -1,13 +1,18 @@
-<div style="border: 1px solid red; margin-top: 5px;padding: 1%;">
+<div  style="border: 1px solid red; margin-top: 5px;padding: 1%;">
+    
     <h2>Livres</h2>
-    <input type="text" [(ngModel)]="name">
-    <button (click)="addBook(name)">Send</button>
+    <input  type="text" [(ngModel)]="name">
+    <button  (click)=" addBook({title:name})">Send</button>
     
     <app-livre *ngFor="let book of Books, index as i" 
-    [ID]="idTry"
+    [ID]="i"
     [index]="i"
-    [BookTitle]="book"  
-    (deleteBook)="deleteBookOK($event)"/>
+    [BookTitle]="book.title"  
+    (deleteBook)="deleteBookOK($event)"
+    
+
+    />
 
 </div>
 
+<!-- (setID)="setId($event)" -->

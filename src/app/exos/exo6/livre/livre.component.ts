@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { bookId } from '../exo6.component';
 
 @Component({
   selector: 'app-livre',
@@ -11,12 +12,15 @@ export class LivreComponent {
   @Input() index:number=0;
 
 
-  @Output() deleteBook:EventEmitter<number>=new EventEmitter<number>();
+  @Output() deleteBook=new EventEmitter<number>();
+  //@Output() setID=new EventEmitter<bookId>();
+
+  // setIDparent(){
+  //   this.setID.emit(this.index);
+  // }
 
   sendIndex()
   {
     this.deleteBook.emit(this.index);
-    
   }
-
 }

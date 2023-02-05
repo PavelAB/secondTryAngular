@@ -1,7 +1,8 @@
-import { Component,Input } from '@angular/core';
+import { Component } from '@angular/core';
 export type bookId ={
   title:string;
-  ID:number;
+  ID?:number;
+  isId?:boolean;
 }
 @Component({
   selector: 'app-exo6',
@@ -9,21 +10,25 @@ export type bookId ={
   styleUrls: ['./exo6.component.scss']
 })
 export class Exo6Component {
-  Books:string[]=["Red","Green"];
-  bookToDelete:number=0;
+  Books:bookId[]=[{title:"Red"},{title:"Green"},{title:"Black"}];
   name:string="";
-  idExist:boolean=false;
   idTry:number=0;
 
-  
-
-  addBook(title:string)
-  {
-    this.Books.push(title);
+  // setId(index:number,id:number){
+  //  this.Books[id].ID=id;
+  // }
+ //envoyer tout dans un string!!!
+  addBook(book:bookId){
+    this.Books.push(book);
   }
-  deleteBookOK(event:number)
-  {
+  deleteBookOK(event:number){
     this.Books.splice(event,1);
   }
+  // setId(){
+  //   for (let book of this.Books) {
+  //     book.ID=this.idTry;
+  //     this.idTry+=1;
+  //   }
+  // }
 
 }
