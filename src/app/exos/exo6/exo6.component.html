@@ -2,13 +2,14 @@
     
     <h2>Livres</h2>
     <input  type="text" [(ngModel)]="name">
-    <button  (click)=" addBook({title:name})">Send</button>
+    <button  (click)=" addBook(name)">Send</button>
     
     <app-livre *ngFor="let book of Books, index as i" 
-    [ID]="i"
+    [ID]="book.ID"
     [index]="i"
     [BookTitle]="book.title"  
     (deleteBook)="deleteBookOK($event)"
+    
     
 
     />

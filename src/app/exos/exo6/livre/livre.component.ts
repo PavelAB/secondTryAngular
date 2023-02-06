@@ -13,7 +13,7 @@ export class LivreComponent {
 
 
   @Output() deleteBook=new EventEmitter<number>();
-  //@Output() setID=new EventEmitter<bookId>();
+  //@Output() newIdnumber=new EventEmitter<number>();
 
   // setIDparent(){
   //   this.setID.emit(this.index);
