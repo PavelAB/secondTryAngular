@@ -14,7 +14,9 @@ export class NavBarComponent {
     {title:"Demo 3",url:"demo3"},
     {title:"Demo 4",url:"demo4"},
     {title:"Demo 5",url:"demo5"},
-    {title:"Demo 6",url:"demo6"}
+    {title:"Demo 6",url:"demo6"},
+    {title:"Demo 7",url:"demo7"}
+
   ]},
   {title:"Exos",children:[
     {title:"UserInfo/Input",url:"exo1"},
@@ -22,7 +24,11 @@ export class NavBarComponent {
     {title:"Spoil",url:"exo3"},
     {title:"Menu",url:"exo4"},
     {title:"Accordeon",url:"exo5"},
-    {title:"Input/Output",url:"exo6"}
+    {title:"Input/Output",url:"exo6"},
+    {title:"ServicesBook",url:"exo7"},
+    {title:"Panier",url:"exo7Bis"}
+
+
 
   ]}
 ]

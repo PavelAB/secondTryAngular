@@ -6,6 +6,8 @@ import { Exo4Component } from './exo4/exo4.component';
 import { Exo5Component } from './exo5/exo5.component';
 import { TimerComponent } from './exo2/timer/timer.component';
 import { Exo6Component } from './exo6/exo6.component';
+import { Exo7Component } from './exo7/exo7.component';
+import { Exo7bisComponent } from './exo7bis/exo7bis.component';
 
 
 const routes: Routes = [
@@ -14,7 +16,11 @@ const routes: Routes = [
 {path: 'exo3',component: Exo3Component },
 {path: 'exo4',component: Exo4Component },
 {path: 'exo5',component: Exo5Component },
-{path: 'exo6',component: Exo6Component }
+{path: 'exo6',component: Exo6Component },
+{path: 'exo7',component: Exo7Component },
+{path: 'exo7Bis',component: Exo7bisComponent }
+
+
 
 ];
 

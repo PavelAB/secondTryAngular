@@ -1,0 +1,16 @@
+<h2>Panier</h2>
+<div>
+    <input  type="text" [(ngModel)]="name">
+    <input  type="number" [(ngModel)]="price"><br>
+    <input type="checkbox" (click)="isColor=!isColor"/><br>
+    <button  (click)=" add()">Send</button>
+</div>
+    <div style="border: 1px solid green; padding: 1%;">
+        <p *ngFor="let i of basket" >{{i.name}}  || <span [ngClass]="{'my-class':i.extraPrice}">Prix {{i.price}}</span>   || {{i.quantity}}  ||  {{i.price*i.quantity}} 
+            <button (click)="addQuantity(i.name)">+</button> 
+            <button (click)="removeQuantity(i.name)">-</button> 
+            <button (click)="deleteproduct(i.name)">Delete</button></p>
+        
+        <span>Total :{{total}} <button  (click)="totalPrice()" >refresh</button> </span>
+    </div>
+

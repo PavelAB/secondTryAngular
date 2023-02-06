@@ -13,6 +13,8 @@ import { SharedModule } from '../shared/shared.module';
 import { Exo6Component } from './exo6/exo6.component';
 import { LivreComponent } from './exo6/livre/livre.component';
 import { FormsModule } from '@angular/forms';
+import { Exo7Component } from './exo7/exo7.component';
+import { Exo7bisComponent } from './exo7bis/exo7bis.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { FormsModule } from '@angular/forms';
   InfoUserComponent,
   InputComponent,
   Exo6Component,
-  LivreComponent],
+  LivreComponent,
+  Exo7Component,
+  Exo7bisComponent],
   imports: [
     CommonModule,
     ExosRoutingModule,

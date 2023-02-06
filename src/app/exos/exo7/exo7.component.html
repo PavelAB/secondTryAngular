@@ -1,0 +1,7 @@
+<h2>Livres</h2>
+    <input  type="text" [(ngModel)]="title">
+    <button  (click)=" test()">Send</button>
+
+    <div style="border: 1px solid green; padding: 1%;">
+        <p *ngFor="let i of booklist" >{{i.ID}}   || {{i.title}}  ||  <button (click)="del(i.ID)">X</button></p>
+    </div>
