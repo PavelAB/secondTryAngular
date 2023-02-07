@@ -47,5 +47,12 @@ export class AllproductService {
 		});
     this.basket.splice(index,1);
   }
+  isPromo(name:string){
+    const index = this.basket.findIndex((product) => {
+			return product.name === name;
+		});
+    this.basket[index].extraPrice=!this.basket[index].extraPrice;
+    return this.basket[index].extraPrice;
+  }
 
 }

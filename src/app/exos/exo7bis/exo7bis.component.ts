@@ -31,12 +31,19 @@ export class Exo7bisComponent {
     this._basket.removeQuantity(name);
 
   }
-  totalPrice()
+  totalPrice():number
   {
     this.total=this._basket.totalPrice();
+    return this.total;
+
   }
   deleteproduct(name:string)
   {
     this._basket.deleteproduct(name);
+  }
+  isPromo(name:string)
+  {
+    return this._basket.isPromo(name)
+     
   }
 }
