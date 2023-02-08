@@ -1,0 +1,11 @@
+<div>
+    <div *ngFor="let i of ListFan " (click)="ChoiceThisFan(i)">
+        {{i.name}}
+        
+        <a [routerLink]="'/fans/create'"><button>+</button></a>
+        
+    </div>
+</div>
+
+<!--  Sans <router-outlet/> ne fonction pas -->
+<router-outlet/>
