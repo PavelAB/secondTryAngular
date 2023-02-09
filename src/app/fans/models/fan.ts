@@ -1,7 +1,8 @@
 export class Fan {
      constructor(
-        public name: string,
-        public birthDate: Date,
-        public titres: string[]
+         public id:number,
+         public name: string,
+         public birthDate: Date,
+         public titres: string[]
      ){}
     }

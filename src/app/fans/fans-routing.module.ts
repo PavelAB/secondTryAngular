@@ -5,7 +5,7 @@ import { FansListComponent } from './fans-list/fans-list.component';
 
 const routes: Routes = [
   {path: '',component: FansListComponent, children:[
-    {path: 'create', component:FansDetailsComponent}
+    {path: ':id', component:FansDetailsComponent}
   ]}];
 
 @NgModule({

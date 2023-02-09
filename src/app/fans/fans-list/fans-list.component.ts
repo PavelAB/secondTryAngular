@@ -9,7 +9,7 @@ import { Fan } from "../models/fan";
 })
 export class FansListComponent {
   ChoiceFan = new EventEmitter<Fan>();
-
+  thatFan=Fan;
 
   constructor(
     private $listFan:FanService
